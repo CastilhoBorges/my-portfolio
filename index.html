@@ -31,11 +31,15 @@
             <div class="menu_bar" id="menu-bar">
                 <ul class="nav_list">
                     <li class="nav_item">
-                        <a href="#home" class="nav_link">Home</a>
+                        <a href="#home" class="nav_link active-link">Home</a>
                     </li>
 
                     <li class="nav_item">
-                        <a href="#sobre" class="nav_link">Sobre</a>
+                        <a href="#about" class="nav_link">Sobre</a>
+                    </li>
+
+                    <li class="nav_item">
+                        <a href="#skills" class="nav_link">Skills</a>
                     </li>
 
                     <li class="nav_item">
@@ -43,7 +47,7 @@
                     </li>
 
                     <li class="nav_item">
-                        <a href="#projetos" class="nav_link">Projetos</a>
+                        <a href="#projects" class="nav_link">Projetos</a>
                     </li>
 
                     <li class="nav_item">
@@ -205,7 +209,7 @@
         </section>
 
         <!--Habilidades-->
-        <section class="habilidades section">
+        <section class="habilidades section" id="skills">
             <div class="habilidades_container container grid">
                 <div class="habilidades_data">
 
@@ -322,14 +326,52 @@
            </div>
 
         </section>
+
     </main>
 
     <footer class="footer">
+        <div class="footer_container container grid">
+            <div>
+                <h1 class="footer_title">
+                    Augusto <span>Castilho Borges</span>
+                </h1>
 
+                <h2 class="footer_education">
+                    Desenvolvedor de Front-end
+                </h2>
+            </div>
+
+            <div class="footer_social">
+
+                <a href="https://www.instagram.com/augustocastilho_/" target="_blank" class="footer_social-link">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+
+                <a href="https://www.linkedin.com/in/augusto-castilho-borges-5ab5a0297/" target="_blank" class="footer_social-link">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+
+                <a href="https://www.tiktok.com/@castilho.borges" target="_blank" class="footer_social-link">
+                    <i class="fa-brands fa-tiktok"></i>
+                </a>
+
+            </div>
+
+            <span class="footer_copy">
+                &#169; Augusto Castilho
+            </span>
+        </div>
     </footer>
 
+    <!--ScrollUp-->
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="fa-solid fa-arrow-up"></i>
+    </a>
+
     <!--Scrip para email-->
-    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
 
     <!--Script-->
     <script src="js/script.js"></script>

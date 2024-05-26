@@ -9,6 +9,166 @@
       --normal-font-size: 1rem;
       --small-font-size: .875rem;
       --smaller-font-size: .813rem;
+      --header-height: 3.5rem;
     }
   }
   
+@media screen and (max-width: 320px){
+  .container{
+    margin-inline: 1rem;
+  }
+
+  .habilidades_content{
+    grid-template-columns: max-content;
+    row-gap: 1rem;
+  }
+
+  .services_card{
+    padding-block: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 576px){
+  .home_container,
+  .about_container,
+  .skills_container,
+  .services_container,
+  .projects_container,
+  .contato_container{
+    grid-template-columns: 360px;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 768px){
+  .menu_bar{
+    width: 55%;
+  }
+
+  .home_container,
+  .about_container,
+  .habilidades_container{
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+  }
+
+  .home_data,
+  .about_data,
+  .habilidades_data
+  :is(.about_data, .habilidades_data) :is(.section_subtitle, .section_title){
+    text-align: initial;
+  }
+
+  .home_social{
+    justify-content: initial;
+  }
+
+  .home_blob,
+  .about_blob{
+    width: 400px;
+  }
+
+  .about_data{
+    order: 1;
+  }
+
+}
+
+@media screen and (min-width: 1028px){
+  .section{
+    padding-block: 7rem 2rem;
+  }
+
+  .section_subtitle{
+    font-size: var(--normal-font-size);
+  }
+
+  .nav{
+    height: calc(var(--header-height) + 1.5rem);
+  }
+
+  .nav_close,
+  .nav_hamb{
+    display: none;
+  }
+
+  .nav_list{
+    flex-direction: row;
+    column-gap: 3rem;
+  }
+
+  .menu_bar{
+    width: initial;
+  }
+
+  .blur-header{
+    backdrop-filter: blur(25px);
+    -webkit-backdrop-filter: blur(25px);
+  }
+}
+
+@media screen and (min-width: 1152px){
+  .container{
+    margin-inline: auto;
+  }
+
+  .home_container{
+    grid-template-columns: 455px 550px;
+    column-gap: 7rem;
+    padding-block: 2rem 3rem;
+  }
+
+  .home_blob{
+    width: 550px;
+  }
+
+  .home_content{
+    row-gap: 4.5rem;
+  }
+
+  .home_description{
+    margin-block: 1.4rem 2.5rem;
+  }
+
+  .home_social{
+    column-gap: 1.5rem;
+  }
+
+  .about_container{
+    grid-template-columns: 550px 460px;
+    column-gap: 4.5rem;
+    padding-bottom: 1rem;
+  }
+
+  .about_blob{
+    width: 550px;
+  }
+
+  .about_description{
+    margin-bottom: 3rem;
+  }
+
+  .habilidades_container{
+    grid-template-columns: 340px 425px;
+    column-gap: 10rem;
+    padding-bottom: 4rem;
+  }
+
+  .habilidades_desc{
+    margin-bottom: 3rem;
+  }
+
+  .habilidades_content{
+    column-gap: 8rem;
+  }
+
+  .habilidades_group{
+    row-gap: 1.5rem;
+  }
+
+  .itens_habilidades{
+    font-size: var(--h3-font-size);
+  }
+
+  .ser
+}
