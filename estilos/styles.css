@@ -442,14 +442,98 @@ span{
 .projects_modal{
   position: absolute;
   left: 0;
-  bottom: 0;
+  bottom: -100%;
   width: 100%;
-  background: linear-gradient(180deg, hsla(0, 0%, 0%, 0) hsla(var(--hue), 70%, 40%, .8) 120%);
+  height: 100%;
+  background: linear-gradient(180deg,
+              hsla(0, 0%, 0%, 0) 0%,
+              hsla(var(--hue), 70%, 40%, .8) 120%);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px); /* Para Safari */
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: bottom .4s;
+}
+
+.projects_subtitle,
+.projects_button{
+  color: var(--title-color);
+  font-size: var(--small-font-size);
+}
+
+.projects_subtitle{
+  display: block;
+  margin-bottom: .25rem;
+}
+
+.projects_title{
+  font-size: var(--h2-font-size);
+  margin-bottom: .75rem;
+}
+
+.projects_button{
+  display: flex;
+  align-items: center;
+  column-gap: .5rem;
+  font-weight: var(--font-medium);
+}
+
+.projects_button i{
+  font-size: 1.25rem;
+  cursor: pointer;
+}
+
+.projects_card:hover .projects_modal{
+  bottom: 0;
 }
 
 /*=============== CONTACT ===============*/
+.contato_container{
+  padding-top: 1rem;
+}
 
+.contato_form,
+.contato_group{
+  display: grid;
+  row-gap: 1rem;
+}
 
+.contato_form{
+  position: relative;
+}
+
+.contato_input{
+  padding: 1rem 1.25rem;
+  border-radius: .5rem;
+  background-color: var(--container-color);
+  color: var(--title-color);
+}
+
+.contato_input::placeholder{
+  color: var(--text-color);
+}
+
+.contato_form textarea{
+  height: 11rem;
+  resize: none;
+  margin-bottom: 2rem;
+}
+
+.contato_button{
+  justify-self: center;
+  cursor: pointer;
+}
+
+.contato_mensagem{
+  position: absolute;
+  left: 0;
+  bottom: 4.5rem;
+  font-size: var(--small-font-size);
+  color: var(--title-color);
+}
 /*=============== FOOTER ===============*/
 
 

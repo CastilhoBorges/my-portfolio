@@ -32,3 +32,27 @@ const blurHeader = () => {
                        : header.classList.remove('blur-header')
 }
 window.addEventListener('scroll', blurHeader)
+
+/* ====== Email JS ====== */
+const contatoForm = document.getElementById('contato-form'),
+      contatoMsg = document.getElementById('contato-mensagem')
+
+const sendEmail = (e) =>{
+    e.preventDefault()
+
+    emailjs.sendForm('service_3en4srr', 'template_pbnnknx', '#contato-form', 'y6fBI962t31HU3p8t')
+        .then(() =>{
+            contatoMsg.textContent = 'Mensagem enviada com suceeso ✅'
+
+            setTimeout(() =>{
+                contatoMsg.textContent = ''
+            }, 5000)
+
+            contatoForm.reset()
+
+        }, () =>{
+            contatoMsg.textContent = 'Mensagem não enviada (erro de serviço) ❌'
+        })
+}
+
+contatoForm.addEventListener('submit', sendEmail)
