@@ -7,13 +7,13 @@
 
   /*========== Colors ==========*/
   
-  --hue: 187;
-  --first-color: hsl(var(--hue), 100%, 37%);
+  --hue: 36;
+  --first-color: hsl(var(--hue), 100%, 26%);
   --first-color-alt: hsl(var(--hue), 56%, 35%);
-  --title-color: hsl(228, 8%, 95%);
-  --text-color: hsl(228, 8%, 65%);
-  --body-color: hsl(228, 15%, 20%);
-  --container-color: hsl(228, 15%, 15%);
+  --title-color: hsl(36 , 100% , 69%);
+  --text-color: hsl(0, 0%, 0%);
+  --body-color: hsl(36, 100%, 52%);
+  --container-color: hsl(36, 100%, 95%);
 
   /*========== Font e typografia ==========*/
   --body-font: "Poppins", sans-serif;
