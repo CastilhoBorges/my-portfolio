@@ -171,16 +171,16 @@
   }
 
   .services_container{
-    grid-template-columns: repeat(3, 352px);
+    /*grid-template-columns: repeat(3, 352px);*/
     padding-block: 2.5rem 4rem;
-  }
+  } 
 
   .services_card{
     padding: 3.5rem 2rem;
-  }
+  } 
 
   .projects_container{
-   grid-template-columns: repeat(3, 350px);
+   /*grid-template-columns: repeat(3, 350px);*/
    row-gap: 3rem;
    padding-block: 2.5rem 4rem;
   }
