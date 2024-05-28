@@ -7,13 +7,13 @@
 
   /*========== Colors ==========*/
   
-  --hue: 36;
-  --first-color: hsl(var(--hue), 100%, 26%);
+  --hue: 210;
+  --first-color: hsl(var(--hue), 30%, 63%);
   --first-color-alt: hsl(var(--hue), 56%, 35%);
-  --title-color: hsl(36 , 100% , 69%);
-  --text-color: hsl(0, 0%, 0%);
-  --body-color: hsl(36, 100%, 52%);
-  --container-color: hsl(36, 100%, 95%);
+  --title-color: hsl(45 , 41% , 84%);
+  --text-color: hsl(45, 41%, 84%);
+  --body-color: hsl(210, 30%, 11%);
+  --container-color: hsl(210, 30%, 11%);
 
   /*========== Font e typografia ==========*/
   --body-font: "Poppins", sans-serif;
@@ -510,7 +510,7 @@ span{
 .contato_input{
   padding: 1rem 1.25rem;
   border-radius: .5rem;
-  background-color: var(--container-color);
+  background-color: var(--first-color);
   color: var(--title-color);
 }
 
