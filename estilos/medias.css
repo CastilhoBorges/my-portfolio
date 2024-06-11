@@ -105,6 +105,11 @@
     backdrop-filter: blur(25px);
     -webkit-backdrop-filter: blur(25px);
   }
+
+  .projects_container{
+    display: flex;
+    max-width: 900px;
+  }
 }
 
 @media screen and (min-width: 1152px){
