@@ -1,383 +1,447 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>Augusto Castilho</title>
 
     <!--Icons-->
-    <script src="https://kit.fontawesome.com/c5492f7cd7.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/c5492f7cd7.js"
+      crossorigin="anonymous"
+    ></script>
 
     <!--Css-->
-    <link rel="stylesheet" href="estilos/styles.css">
-    <link rel="stylesheet" href="estilos/medias.css">
+    <link rel="stylesheet" href="estilos/styles.css" />
+    <link rel="stylesheet" href="estilos/medias.css" />
 
     <title>Meu Portfolio</title>
-</head> 
-<body>
-
+  </head>
+  <body>
     <!--Cabeçalho-->
     <header class="header" id="header">
+      <nav class="nav container">
+        <a href="#" class="nav_logo"> Augusto <span>Castilho</span> </a>
 
-        <nav class="nav container">
+        <div class="menu_bar" id="menu-bar">
+          <ul class="nav_list">
+            <li class="nav_item">
+              <a href="#home" class="nav_link active-link">Home</a>
+            </li>
 
-            <a href="#" class="nav_logo">
-                Augusto <span>Castilho</span>
-            </a>
+            <li class="nav_item">
+              <a href="#about" class="nav_link">Sobre</a>
+            </li>
 
-            <div class="menu_bar" id="menu-bar">
-                <ul class="nav_list">
-                    <li class="nav_item">
-                        <a href="#home" class="nav_link active-link">Home</a>
-                    </li>
+            <li class="nav_item">
+              <a href="#skills" class="nav_link">Skills</a>
+            </li>
 
-                    <li class="nav_item">
-                        <a href="#about" class="nav_link">Sobre</a>
-                    </li>
+            <li class="nav_item">
+              <a href="#services" class="nav_link">Serviços</a>
+            </li>
 
-                    <li class="nav_item">
-                        <a href="#skills" class="nav_link">Skills</a>
-                    </li>
+            <li class="nav_item">
+              <a href="#projects" class="nav_link">Projetos</a>
+            </li>
 
-                    <li class="nav_item">
-                        <a href="#services" class="nav_link">Serviços</a>
-                    </li>
+            <li class="nav_item">
+              <a href="#contato" class="nav_link">Contato</a>
+            </li>
+          </ul>
 
-                    <li class="nav_item">
-                        <a href="#projects" class="nav_link">Projetos</a>
-                    </li>
+          <!--Botão de fechar-->
+          <div class="nav_close" id="nav-close">
+            <i class="fa-solid fa-x"></i>
+          </div>
+        </div>
 
-                    <li class="nav_item">
-                        <a href="#contato" class="nav_link">Contato</a>
-                    </li>
-                </ul>
-
-                <!--Botão de fechar-->
-                <div class="nav_close" id="nav-close">
-                    <i class="fa-solid fa-x"></i>
-                </div>
-            </div>
-
-            <!--Botão Hamburguer-->
-            <div class="nav_hamb" id="nav-hamb">
-                <i class="fa-solid fa-bars"></i>
-            </div>
-
-        </nav>
-
+        <!--Botão Hamburguer-->
+        <div class="nav_hamb" id="nav-hamb">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </nav>
     </header>
 
     <!--Main-->
     <main class="main">
+      <!--Home-->
+      <section class="home section" id="home">
+        <div class="home_container container grid">
+          <div class="home_content">
+            <div class="home_data">
+              <h3 class="home_subtitle">Olá Mundo, <span>Eu sou</span></h3>
 
-        <!--Home-->
-        <section class="home section" id="home">
-            <div class="home_container container grid">
-                <div class="home_content">
+              <h1 class="home_title">Augusto Castilho</h1>
 
-                    <div class="home_data">
-                        <h3 class="home_subtitle">
-                            Olá Mundo, <span>Eu sou</span>
-                        </h3>
+              <h3 class="home_education">Web Development</h3>
 
-                        <h1 class="home_title">Augusto Castilho</h1>
+              <p class="home_description"></p>
 
-                        <h3 class="home_education">Web Development</h3>
-
-                        <p class="home_description">
-                            
-                        </p>
-
-                        <a href="#contato" class="button">Vamos nos conectar</a>
-                    </div>
-
-                    <div class="home_social">
-
-                        <a href="https://github.com/CastilhoBorges" target="_blank" class="home_social-link">
-                            <i class="fa-brands fa-github"></i>
-                        </a>
-
-                        <a href="https://www.linkedin.com/in/augusto-castilho-borges-5ab5a0297/" target="_blank" class="home_social-link">
-                            <i class="fa-brands fa-linkedin"></i>
-                        </a>
-
-                        <a href="https://www.instagram.com/augustocastilho_/" target="_blank" class="home_social-link">
-                            <i class="fa-brands fa-instagram"></i>
-                        </a>
-
-                    </div>
-
-                </div>
-
-                <div class="home_image">
-                    <svg class="home_blob" viewBox="0 0 550 591" xmlns="http://www.w3.org/2000/svg">
-                        <mask id="maskBlob" mask-type="alpha">
-                           <path d="M263 47.1782C270.426 42.891 279.574 42.891 287 47.1782L501.157 
-                           170.822C508.583 175.109 513.157 183.032 513.157 191.606V438.894C513.157 
-                           447.468 508.583 455.391 501.157 459.678L287 583.322C279.574 587.609 270.426 
-                           587.609 263 583.322L48.843 459.678C41.4174 455.391 36.843 447.468 36.843 
-                           438.894V191.606C36.843 183.032 41.4174 175.109 48.843 170.822L263 47.1782Z"/>
-                        </mask>
-                        <g mask="url(#maskBlob)">
-                           <path d="M263 47.1782C270.426 42.891 279.574 42.891 287 47.1782L501.157 
-                           170.822C508.583 175.109 513.157 183.032 513.157 191.606V438.894C513.157 
-                           447.468 508.583 455.391 501.157 459.678L287 583.322C279.574 587.609 270.426 
-                           587.609 263 583.322L48.843 459.678C41.4174 455.391 36.843 447.468 36.843 
-                           438.894V191.606C36.843 183.032 41.4174 175.109 48.843 170.822L263 47.1782Z"/>
-                     
-                           <rect x="37" width="476" height="630" fill="url(#pattern0)"/>
-                        </g>
-                     
-                        <rect x="37" width="476" height="300" fill="url(#pattern1)"/>
-                     
-                        <defs>
-                           <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
-                              <use href="#imageBlob" transform="matrix(0.00143057 0 0 0.00108108 0.0404062 0)"/>
-                           </pattern>
-                     
-                           <pattern id="pattern1" patternContentUnits="objectBoundingBox" width="1" height="1">
-                              <use href="#imageBlob" transform="matrix(0.00143057 0 0 0.00226984 0.0404062 0)"/>
-                           </pattern>
-                     
-                           <image class="home_img" id="imageBlob" width="640" height="925" href="imagens/castilho.png"/>
-                        </defs>
-                     </svg>
-                </div>
+              <a href="#contato" class="button">Vamos nos conectar</a>
             </div>
-        </section>
 
-        <!--Sobre mim-->
-        <section class="about section" id="about">
-            
-            <div class="about_container container grid">
-                <div class="about_data">
-                    <h3 class="section_subtitle">
-                        <span>Introdução</span>
-                    </h3>
+            <div class="home_social">
+              <a
+                href="https://github.com/CastilhoBorges"
+                target="_blank"
+                class="home_social-link"
+              >
+                <i class="fa-brands fa-github"></i>
+              </a>
 
-                    <h2 class="section_title">
-                        Sobre mim
-                    </h2>
+              <a
+                href="https://www.linkedin.com/in/augusto-castilho-borges-5ab5a0297/"
+                target="_blank"
+                class="home_social-link"
+              >
+                <i class="fa-brands fa-linkedin"></i>
+              </a>
 
-                    <p class="about_description">
-                        Meu nome é Augusto e sou apaixonado em resolver problemas. Estou sempre em busca de novas oportunidades para aprender e evoluir na área de TI, o que me permite oferecer soluções inovadoras e eficazes na resolução de problemas.
-                    </p>
+              <a
+                href="https://www.instagram.com/augustocastilho_/"
+                target="_blank"
+                class="home_social-link"
+              >
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+            </div>
+          </div>
 
-                    <a href="#contato" class="button">Entre em Contato</a>
-                </div>
+          <div class="home_image">
+            <svg
+              class="home_blob"
+              viewBox="0 0 550 591"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <mask id="maskBlob" mask-type="alpha">
+                <path
+                  d="M263 47.1782C270.426 42.891 279.574 42.891 287 47.1782L501.157 
+                           170.822C508.583 175.109 513.157 183.032 513.157 191.606V438.894C513.157 
+                           447.468 508.583 455.391 501.157 459.678L287 583.322C279.574 587.609 270.426 
+                           587.609 263 583.322L48.843 459.678C41.4174 455.391 36.843 447.468 36.843 
+                           438.894V191.606C36.843 183.032 41.4174 175.109 48.843 170.822L263 47.1782Z"
+                />
+              </mask>
+              <g mask="url(#maskBlob)">
+                <path
+                  d="M263 47.1782C270.426 42.891 279.574 42.891 287 47.1782L501.157 
+                           170.822C508.583 175.109 513.157 183.032 513.157 191.606V438.894C513.157 
+                           447.468 508.583 455.391 501.157 459.678L287 583.322C279.574 587.609 270.426 
+                           587.609 263 583.322L48.843 459.678C41.4174 455.391 36.843 447.468 36.843 
+                           438.894V191.606C36.843 183.032 41.4174 175.109 48.843 170.822L263 47.1782Z"
+                />
 
-                <div class="about_image">
-                    <svg class="about_blob" viewBox="0 0 550 592" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <mask id="maskBorder" mask-type="alpha">
-                           <path d="M263 48.1782C270.426 43.891 279.574 43.891 287 48.1782L501.157 
+                <rect x="37" width="476" height="630" fill="url(#pattern0)" />
+              </g>
+
+              <rect x="37" width="476" height="300" fill="url(#pattern1)" />
+
+              <defs>
+                <pattern
+                  id="pattern0"
+                  patternContentUnits="objectBoundingBox"
+                  width="1"
+                  height="1"
+                >
+                  <use
+                    href="#imageBlob"
+                    transform="matrix(0.00143057 0 0 0.00108108 0.0404062 0)"
+                  />
+                </pattern>
+
+                <pattern
+                  id="pattern1"
+                  patternContentUnits="objectBoundingBox"
+                  width="1"
+                  height="1"
+                >
+                  <use
+                    href="#imageBlob"
+                    transform="matrix(0.00143057 0 0 0.00226984 0.0404062 0)"
+                  />
+                </pattern>
+
+                <image
+                  class="home_img"
+                  id="imageBlob"
+                  width="640"
+                  height="925"
+                  href="imagens/castilho.png"
+                />
+              </defs>
+            </svg>
+          </div>
+        </div>
+      </section>
+
+      <!--Sobre mim-->
+      <section class="about section" id="about">
+        <div class="about_container container grid">
+          <div class="about_data">
+            <h3 class="section_subtitle">
+              <span>Introdução</span>
+            </h3>
+
+            <h2 class="section_title">Sobre mim</h2>
+
+            <p class="about_description">
+              Meu nome é Augusto e sou apaixonado em resolver problemas. Estou
+              sempre em busca de novas oportunidades para aprender e evoluir na
+              área de TI, o que me permite oferecer soluções inovadoras e
+              eficazes na resolução de problemas.
+            </p>
+
+            <a href="#contato" class="button">Entre em Contato</a>
+          </div>
+
+          <div class="about_image">
+            <svg
+              class="about_blob"
+              viewBox="0 0 550 592"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <mask id="maskBorder" mask-type="alpha">
+                <path
+                  d="M263 48.1782C270.426 43.891 279.574 43.891 287 48.1782L501.157 
                            171.822C508.583 176.109 513.157 184.032 513.157 192.606V439.894C513.157 
                            448.468 508.583 456.391 501.157 460.678L287 584.322C279.574 588.609 
                            270.426 588.609 263 584.322L48.843 460.678C41.4174 456.391 36.843 448.468 36.843 
-                           439.894V192.606C36.843 184.032 41.4174 176.109 48.843 171.822L263 48.1782Z" fill="black"/>
-                        </mask>
-                        <g mask="url(#maskBorder)">
-                           <rect x="37" width="476" height="630" fill="url(#pattern2)"/>
-                           
-                           <path d="M285 51.6423L499.157 175.286C505.345 178.859 509.157 185.461 509.157 
+                           439.894V192.606C36.843 184.032 41.4174 176.109 48.843 171.822L263 48.1782Z"
+                  fill="black"
+                />
+              </mask>
+              <g mask="url(#maskBorder)">
+                <rect x="37" width="476" height="630" fill="url(#pattern2)" />
+
+                <path
+                  d="M285 51.6423L499.157 175.286C505.345 178.859 509.157 185.461 509.157 
                            192.606V439.894C509.157 447.039 505.345 453.641 499.157 457.214L285 
                            580.858C278.812 584.43 271.188 584.43 265 580.858L50.843 457.214C44.655 453.641 
                            40.843 447.039 40.843 439.894V192.606C40.843 185.461 44.655 178.859 50.843 
-                           175.286L265 51.6423C271.188 48.0697 278.812 48.0696 285 51.6423Z" stroke="black" stroke-width="10"/>
-                        </g>
-                     
-                        <rect x="37" width="476" height="300" fill="url(#pattern3)"/>
-                     
-                        <defs>
-                           <pattern id="pattern2" patternContentUnits="objectBoundingBox" width="1" height="1">
-                              <use href="#imageBorder" transform="matrix(0.00143057 0 0 0.00108108 0.0404062 0)"/>
-                           </pattern>
-                     
-                           <pattern id="pattern3" patternContentUnits="objectBoundingBox" width="1" height="1">
-                              <use href="#imageBorder" transform="matrix(0.00143057 0 0 0.00226984 0.0404062 0)"/>
-                           </pattern>
-                     
-                           <!-- Insert your profile (recommended size: 640 x 940) -->
-                           <image class="about_img" id="imageBorder" width="640" height="940" href="imagens/castilho.png"/>
-                        </defs>
-                     </svg>
-                </div>
+                           175.286L265 51.6423C271.188 48.0697 278.812 48.0696 285 51.6423Z"
+                  stroke="black"
+                  stroke-width="10"
+                />
+              </g>
+
+              <rect x="37" width="476" height="300" fill="url(#pattern3)" />
+
+              <defs>
+                <pattern
+                  id="pattern2"
+                  patternContentUnits="objectBoundingBox"
+                  width="1"
+                  height="1"
+                >
+                  <use
+                    href="#imageBorder"
+                    transform="matrix(0.00143057 0 0 0.00108108 0.0404062 0)"
+                  />
+                </pattern>
+
+                <pattern
+                  id="pattern3"
+                  patternContentUnits="objectBoundingBox"
+                  width="1"
+                  height="1"
+                >
+                  <use
+                    href="#imageBorder"
+                    transform="matrix(0.00143057 0 0 0.00226984 0.0404062 0)"
+                  />
+                </pattern>
+
+                <!-- Insert your profile (recommended size: 640 x 940) -->
+                <image
+                  class="about_img"
+                  id="imageBorder"
+                  width="640"
+                  height="940"
+                  href="imagens/castilho.png"
+                />
+              </defs>
+            </svg>
+          </div>
+        </div>
+      </section>
+
+      <!--Habilidades-->
+      <section class="habilidades section" id="skills">
+        <div class="habilidades_container container grid">
+          <div class="habilidades_data">
+            <h2 class="section_title">Minhas <span>Skills</span></h2>
+
+            <p class="habilidades_desc">
+              Aqui estão algumas das minhas competências e, abaixo, encontra-se
+              o meu currículo para sua apreciação.
+            </p>
+
+            <a
+              href="imagens/curriculo.pdf"
+              download="castilho.pdf"
+              class="button"
+              >Baixe meu CV</a
+            >
+          </div>
+
+          <div class="habilidades_content">
+            <ol class="habilidades_group">
+              <li class="itens_habilidades">Node.js</li>
+              <li class="itens_habilidades">Express</li>
+              <li class="itens_habilidades">React</li>
+            </ol>
+
+            <ol class="habilidades_group" start="4">
+              <li class="itens_habilidades">JavaScript</li>
+              <li class="itens_habilidades">HTML & CSS</li>
+              <li class="itens_habilidades">Git</li>
+            </ol>
+          </div>
+        </div>
+      </section>
+
+      <!--Serviços-->
+      <section class="services section" id="services">
+        <h3 class="section_subtitle" hidden>Meus <span>Serviços</span></h3>
+
+        <h2 class="section_title">O que eu faço?</h2>
+
+        <div class="services_container container grid">
+          <article class="services_card">
+            <i class="fa-solid fa-globe services_icon"></i>
+
+            <h2 class="services_title">Analista e Desenvolvedor de Software</h2>
+
+            <p class="services_description">
+              Atualmente atuo como Analista e Desenvolvedor de Software na
+              Harpoon, onde sou responsável pelo desenvolvimento e manutenção de
+              soluções web robustas e escaláveis. Meu trabalho envolve análise
+              de requisitos, elaboração de arquitetura de sistemas,
+              desenvolvimento de funcionalidades customizadas e aprimoramento da
+              experiência do usuário.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <!--Projetos-->
+      <section class="projects section" id="projects">
+        <h3 class="section_subtitle">Meus <span>Trabalhos</span></h3>
+
+        <h2 class="section_title">Projetos Recentes</h2>
+
+        <div class="projects_container container grid">
+          <article class="projects_card">
+            <img src="imagens/memorygame.jpeg" class="projects_img" alt="" />
+
+            <div class="projects_modal">
+              <span class="projects_subtitle">Simples</span>
+
+              <h2 class="projects_title">Jogo da memoria</h2>
+
+              <a
+                href="https://castilhoborges.github.io/jogo-da-memoria/"
+                class="projects_button"
+                target="_blank"
+              >
+                Veja Mais <i class="fa-solid fa-link"></i>
+              </a>
             </div>
-        </section>
+          </article>
+        </div>
+      </section>
 
-        <!--Habilidades-->
-        <section class="habilidades section" id="skills">
-            <div class="habilidades_container container grid">
-                <div class="habilidades_data">
+      <!--Contato-->
+      <section class="contato section" id="contato">
+        <h2 class="section_title">Entre em <span>contato</span></h2>
 
-                    <h2 class="section_title">
-                        Minhas <span>Skills</span>
-                    </h2>
-
-                    <p class="habilidades_desc">
-                        Aqui estão algumas das minhas competências e, abaixo, encontra-se o meu currículo para sua apreciação.
-                    </p>
-
-                    <a href="imagens/curriculo.pdf" download="castilho.pdf" class="button">Baixe meu CV</a>
-                </div>
-
-                <div class="habilidades_content">
-                    <ol class="habilidades_group">
-                        <li class="itens_habilidades">Node.js</li>
-                        <li class="itens_habilidades">Express</li>
-                        <li class="itens_habilidades">React</li>
-                    </ol>
-
-                    <ol class="habilidades_group" start="4">
-                        <li class="itens_habilidades">JavaScript</li>
-                        <li class="itens_habilidades">HTML & CSS</li>
-                        <li class="itens_habilidades">Git</li>
-                    </ol>
-                </div>
-            </div>
-        </section>
-
-        <!--Serviços-->
-        <section class="services section" id="services" hidden>
-
-            <h3 class="section_subtitle">
-                Meus <span>Serviços</span>
-            </h3>
-
-            <h2 class="section_title">
-                O que eu faço?
-            </h2>
-
-            <div class="services_container container grid">
-
-                <article class="services_card">
-
-                    <i class="fa-solid fa-globe services_icon"></i>
-
-                    <h2 class="services_title">Student</h2>
-
-                    <p class="services_description">
-                        Atualmente estou estudando profundamente JavaScript para então começar a entrar para o lado do backend da WEB
-                    </p>
-
-                </article>
-
+        <div class="contato_container container grid">
+          <form action="" class="contato_form" id="contato-form">
+            <div class="contato_group">
+              <input
+                type="text"
+                name="user_name"
+                required
+                placeholder="Seu nome"
+                class="contato_input"
+              />
+              <input
+                type="email"
+                name="user_email"
+                required
+                placeholder="Email"
+                class="contato_input"
+              />
             </div>
 
-        </section>
+            <textarea
+              name="user_project"
+              required
+              placeholder="Mensagem"
+              class="contato_input"
+            ></textarea>
 
-        <!--Projetos-->
-        <section class="projects section" id="projects">
-            <h3 class="section_subtitle">
-                Meus <span>Trabalhos</span>
-            </h3>
+            <p class="contato_mensagem" id="contato-mensagem"></p>
 
-            <h2 class="section_title">
-                Projetos Recentes
-            </h2>
-
-            <div class="projects_container container grid">
-
-                <article class="projects_card">
-
-                    <img src="imagens/memorygame.jpeg" class="projects_img" alt="">
-
-                    <div class="projects_modal">
-
-                        <span class="projects_subtitle">Simples</span>
-
-                        <h2 class="projects_title">Jogo da memoria</h2>
-
-                        <a href="https://castilhoborges.github.io/jogo-da-memoria/" class="projects_button" target="_blank">
-                            Veja Mais <i class="fa-solid fa-link"></i>
-                        </a>
-
-                    </div>
-
-                </article>
-
-            </div>
-        </section>
-
-        <!--Contato-->
-        <section class="contato section" id="contato">
-
-           <h2 class="section_title">
-            Entre em <span>contato</span>               
-           </h2>
-
-           <div class="contato_container container grid">
-
-            <form action="" class="contato_form" id="contato-form">
-
-                <div class="contato_group">
-                    <input type="text" name="user_name" required placeholder="Seu nome" class="contato_input">
-                    <input type="email" name="user_email" required placeholder="Email" class="contato_input">
-                </div>
-
-                <textarea name="user_project" required placeholder="Mensagem" class="contato_input"></textarea>
-
-                <p class="contato_mensagem" id="contato-mensagem"></p>
-
-                <button type="submit" class="button contato_button">
-                    Enviar
-                </button>
-            </form>
-
-           </div>
-
-        </section>
-
+            <button type="submit" class="button contato_button">Enviar</button>
+          </form>
+        </div>
+      </section>
     </main>
 
     <footer class="footer">
-        <div class="footer_container container grid">
-            <div>
-                <h1 class="footer_title">
-                    Augusto <span>Castilho Borges</span>
-                </h1>
+      <div class="footer_container container grid">
+        <div>
+          <h1 class="footer_title">Augusto <span>Castilho Borges</span></h1>
 
-                <h2 class="footer_education">
-                    Web Development
-                </h2>
-            </div>
-
-            <div class="footer_social">
-
-                <a href="https://www.instagram.com/augustocastilho_/" target="_blank" class="footer_social-link">
-                    <i class="fa-brands fa-instagram"></i>
-                </a>
-
-                <a href="https://www.linkedin.com/in/augusto-castilho-borges-5ab5a0297/" target="_blank" class="footer_social-link">
-                    <i class="fa-brands fa-linkedin"></i>
-                </a>
-
-                <a href="https://www.tiktok.com/@castilho.borges" target="_blank" class="footer_social-link">
-                    <i class="fa-brands fa-tiktok"></i>
-                </a>
-
-            </div>
-
-            <span class="footer_copy">
-                &#169; Augusto Castilho
-            </span>
+          <h2 class="footer_education">Web Development</h2>
         </div>
+
+        <div class="footer_social">
+          <a
+            href="https://www.instagram.com/augustocastilho_/"
+            target="_blank"
+            class="footer_social-link"
+          >
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+
+          <a
+            href="https://www.linkedin.com/in/augusto-castilho-borges-5ab5a0297/"
+            target="_blank"
+            class="footer_social-link"
+          >
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+
+          <a
+            href="https://www.tiktok.com/@castilho.borges"
+            target="_blank"
+            class="footer_social-link"
+          >
+            <i class="fa-brands fa-tiktok"></i>
+          </a>
+        </div>
+
+        <span class="footer_copy"> &#169; Augusto Castilho </span>
+      </div>
     </footer>
 
     <!--ScrollUp-->
     <a href="#" class="scrollup" id="scroll-up">
-        <i class="fa-solid fa-arrow-up"></i>
+      <i class="fa-solid fa-arrow-up"></i>
     </a>
 
     <!--ScrollReveal-->
     <script src="js/scrollreveal.min.js"></script>
 
     <!--Scrip para email-->
-    <script
-    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
-    </script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 
     <!--Script-->
     <script src="js/script.js"></script>
-</body>
+  </body>
 </html>
